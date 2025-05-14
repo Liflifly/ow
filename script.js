@@ -121,4 +121,13 @@ if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       clearProps: "all"
     });
   });
-} // End reduced motion check
+}
+
+// Navbar toggle for mobile
+const menuBtn = document.getElementById('menu-btn');
+const menu = document.getElementById('menu');
+
+menuBtn.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+  menuBtn.classList.toggle('open');
+});
