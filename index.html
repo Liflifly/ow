@@ -39,7 +39,14 @@
   <!-- Navbar -->
   <header class="fixed top-0 left-0 w-full bg-white shadow z-50 flex justify-between items-center px-8 py-6">
     <h1 class="text-3xl font-bold">F<span class="text-sm font-normal">Arhan</span></h1>
-    <nav class="space-x-6 text-sm font-medium">
+    <button id="menu-btn" class="block md:hidden focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+    <nav id="menu" class="hidden md:flex space-x-6 text-sm font-medium">
       <a href="#home" class="nav-link">HOME</a>
       <a href="#about" class="nav-link">ABOUT</a>
       <a href="#education" class="nav-link">EDUCATION</a>
@@ -60,7 +67,7 @@
       </button>
     </div>
     <div class="md:w-1/2 mt-10 md:mt-0">
-      <img src="https://source.unsplash.com/600x800/?man,coat,sunglasses" alt="Hero" class="rounded-lg shadow-lg max-h-[500px] mx-auto" />
+      <img src="hero.png" alt="Hero" class="rounded-lg shadow-lg max-h-[500px] mx-auto" />
     </div>
   </section>
 
@@ -70,7 +77,7 @@
       <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">ABOUT ME</h2>
       <div class="flex flex-col md:flex-row items-start gap-10">
         <div class="md:w-1/2" data-aos="fade-right">
-          <img src="https://source.unsplash.com/400x400/?man,portrait" alt="About" class="rounded shadow-md" />
+          <img src="aboutme.jpg" alt="About" class="rounded shadow-md" />
         </div>
         <div class="md:w-1/2 space-y-6" data-aos="fade-left">
           <h3 class="text-xl font-semibold">UI/UX Designer & Web Enthusiast</h3>
@@ -174,9 +181,9 @@
       <h2 class="text-4xl font-bold" data-aos="fade-up">WORK</h2>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-      <div class="image-zoom"><img src="https://via.placeholder.com/400x300?text=Poster" alt="Work"></div>
-      <div class="image-zoom"><img src="https://via.placeholder.com/400x300?text=Flyer" alt="Work"></div>
-      <div class="image-zoom"><img src="https://via.placeholder.com/400x300?text=Mockup" alt="Work"></div>
+      <div class="image-zoom"><img src="111.png" alt="Work"></div>
+      <div class="image-zoom"><img src="222.png" alt="Work"></div>
+      <div class="image-zoom"><img src="333.png" alt="Work"></div>
     </div>
   </section>
 
@@ -194,8 +201,30 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-black text-white text-center py-4">
-    <p>&copy; 2025 Farhan. All rights reserved.</p>
+  <footer class="bg-black text-white text-center py-10">
+    <div class="max-w-6xl mx-auto px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+        <div class="text-sm">&copy; 2025 Farhan. All rights reserved.</div>
+        <div class="space-x-6">
+          <a href="#home" class="hover:underline">Home</a>
+          <a href="#about" class="hover:underline">About</a>
+          <a href="#services" class="hover:underline">Services</a>
+          <a href="#work" class="hover:underline">Work</a>
+          <a href="#contact" class="hover:underline">Contact</a>
+        </div>
+        <div class="space-x-4">
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter" class="hover:text-gray-400">
+            <svg class="w-5 h-5 inline" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0022.4.36a9.06 9.06 0 01-2.88 1.1A4.52 4.52 0 0016.67 0c-2.5 0-4.5 2.1-4.5 4.7 0 .37.04.73.12 1.07A12.94 12.94 0 013 1.64a4.48 4.48 0 001.39 6.3 4.41 4.41 0 01-2.04-.57v.06c0 2.28 1.6 4.18 3.72 4.62a4.52 4.52 0 01-2.03.08 4.5 4.5 0 004.2 3.3A9.06 9.06 0 012 19.54a12.8 12.8 0 006.92 2.03c8.3 0 12.85-7.1 12.85-13.25 0-.2 0-.42-.02-.63A9.22 9.22 0 0023 3z"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hover:text-gray-400">
+            <svg class="w-5 h-5 inline" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 11-.01 5.01 2.5 2.5 0 01.01-5.01zM3 9h4v12H3zM9 9h3.6v1.71h.05a3.95 3.95 0 013.55-1.95c3.8 0 4.5 2.5 4.5 5.75V21H16v-5.5c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21H9z"/></svg>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="hover:text-gray-400">
+            <svg class="w-5 h-5 inline" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0a12 12 0 00-3.79 23.4c.6.11.82-.26.82-.58v-2.17c-3.34.73-4.04-1.61-4.04-1.61a3.18 3.18 0 00-1.34-1.76c-1.1-.75.08-.74.08-.74a2.52 2.52 0 011.84 1.24 2.56 2.56 0 003.5 1 2.56 2.56 0 01.76-1.6c-2.67-.3-5.47-1.34-5.47-5.95a4.66 4.66 0 011.24-3.23 4.33 4.33 0 01.12-3.18s1-.32 3.3 1.23a11.4 11.4 0 016 0c2.3-1.55 3.3-1.23 3.3-1.23a4.33 4.33 0 01.12 3.18 4.66 4.66 0 011.24 3.23c0 4.62-2.8 5.65-5.48 5.95a2.87 2.87 0 01.82 2.22v3.3c0 .32.22.7.82.58A12 12 0 0012 0z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <!-- Scripts -->
